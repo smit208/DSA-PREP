@@ -13,8 +13,8 @@ public:
         }
          for(int k=0;k<nums3.size();k++){
             for(int l=0;l<nums4.size();l++){
-                int sum=nums3[k]+nums4[l];
-                count+=mp[-sum];
+                int sum1=nums3[k]+nums4[l];
+                count+=mp[-sum1];
             }
             
         }
