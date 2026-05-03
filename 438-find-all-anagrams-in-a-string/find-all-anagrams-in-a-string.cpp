@@ -14,7 +14,7 @@ public:
                 result.push_back(0);
             }
         for(int i=p.size();i<s.size();i++){
-            char ch=s[i-p.size()]--;
+            char ch=s[i-p.size()];
             window[ch]--;
             if(window[ch]==0) window.erase(ch);
             window[s[i]]++;
