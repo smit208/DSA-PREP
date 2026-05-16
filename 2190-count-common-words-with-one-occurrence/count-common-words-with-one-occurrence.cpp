@@ -10,11 +10,9 @@ public:
         for(string str:words1){
             mp2[str]++;
         }
-        for(string str:words1){
-            if(mp.find(str)!=mp.end() && mp[str]==1){
-                if(mp2[str]==1){
+        for(auto it:mp){
+            if(it.second==1 && mp2[it.first]==1){
                 count++;
-                }
             }
         }
         return count;
