@@ -7,9 +7,7 @@ public:
             mp[ch]++;
         }
         for(char ch:jewels){
-            if(mp.find(ch)!=mp.end()){
                 count+=mp[ch];
-            }
         }
         return count;
     }
